@@ -50,7 +50,7 @@ class KMeans:
         means[int(c)] = np.mean(points, axis=0)
 
       delta = np.linalg.norm(prev_means - means)
-      if delta <= EPSILON:
+      if delta < EPSILON:
         break
 
     return costs
