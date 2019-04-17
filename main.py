@@ -85,7 +85,7 @@ def plot_costs(costs):
   plt.plot(range(len(costs)), costs, 'r-o')
   plt.axis([0, len(costs), 0, max(costs) * 1.5])
   plt.xlabel('Iteration')
-  plt.ylabel('J for assignment step')
+  plt.ylabel('J (Cost) in assignment step')
   plt.show()
 
 if __name__ == '__main__':
